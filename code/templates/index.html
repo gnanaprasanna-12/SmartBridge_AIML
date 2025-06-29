@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HematoVision - Predict Blood Cell</title>
+</head>
+<body style="text-align:center; font-family:sans-serif;">
+    <h2>Upload Blood Cell Image</h2>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if label %}
+        <h3>Prediction: {{ label }}</h3>
+        <p>Confidence: {{ confidence }}%</p>
+        <img src="{{ url_for('static', filename='../uploads/' + image) }}" width="300">
+    {% endif %}
+</body>
+</html>
+
