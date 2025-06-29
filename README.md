@@ -1,32 +1,57 @@
 # SmartBridge_ai_ml
 HematoVision: AI-Powered Blood Cell Classification
 
-1. INTRODUCTION:
-   *Project Overview :*
-     HematoVision is a deep learning project designed to accurately and efficiently classify blood cells from microscopic images. Utilizing a dataset of over 12,000 images, this project leverages     transfer learning with the VGG16 architecture to distinguish between four major types of white blood cells: eosinophils, lymphocytes, monocytes, and neutrophils.
-  *Purpose :*
-     The final output is a fully functional web application built with Flask, where users can upload a blood cell image and receive an instant classification from the trained AI model. This project serves as a demonstration for real-world applications in healthcare, such as automated diagnostics, remote medical consultations, and medical training tools.
+# HematoVision – Blood Cell Classification using Transfer Learning
 
-2.IDEATION PHASE:# SmartBridge_ai_ml
-[Copy_of_Define_Problem_Statements_Template[1].docx](https://github.com/user-attachments/files/20961997/Copy_of_Define_Problem_Statements_Template.1.docx)
-[Copy_of_Empathy_Map_Canvas[1].docx](https://github.com/user-attachments/files/20962003/Copy_of_Empathy_Map_Canvas.1.docx)
-[Copy_of_Brainstorming-_Idea_Generation-_Prioritizaation_Template[1].docx](https://github.com/user-attachments/files/20962004/Copy_of_Brainstorming-_Idea_Generation-_Prioritizaation_Template.1.docx)
+HematoVision is an AI-powered diagnostic tool that classifies blood cells using **transfer learning** with pre-trained CNNs like ResNet50. Built with TensorFlow/Keras, the model is trained on a dataset of 12,000+ annotated images, categorized into:
 
-3.REQUIREMENT ANALYSIS
-[Customer Journey Map - Example.pdf](https://github.com/user-attachments/files/20962010/Customer.Journey.Map.-.Example.pdf)
-[Copy_of_Solution_Requirements[1].docx](https://github.com/user-attachments/files/20962012/Copy_of_Solution_Requirements.1.docx)
-[Data Flow Diagrams and User Stories.docx](https://github.com/user-attachments/files/20962014/Data.Flow.Diagrams.and.User.Stories.docx)
-[Technology Stack - Template.docx](https://github.com/user-attachments/files/20962018/Technology.Stack.-.Template.docx)
+- Eosinophils
+- Lymphocytes
+- Monocytes
+- Neutrophils
 
-4.PROJECT DESIGN
-[Copy_of_Problem_-_Solution_Fit_Template_v1[1].docx](https://github.com/user-attachments/files/20962022/Copy_of_Problem_-_Solution_Fit_Template_v1.1.docx)
-[Copy_of_Proposed_Solution_Template[1].docx](https://github.com/user-attachments/files/20962034/Copy_of_Proposed_Solution_Template.1.docx)
-[Copy_of_Solution_Architecture[2].docx](https://github.com/user-attachments/files/20962045/Copy_of_Solution_Architecture.2.docx)
+The project delivers a scalable, efficient, and accurate solution for healthcare and medical training.
 
-5.PROJECT PLANNING & SCHEDULING
-[Project_Planning_Template[1][1].docx](https://github.com/user-attachments/files/20962053/Project_Planning_Template.1.1.docx)
+---
 
-6.FUNCTIONAL AND PERFORMANCE TESTING
-[_Artificial Intelligence.docx](https://github.com/user-attachments/files/20962054/_Artificial.Intelligence.docx)
-[GenAI_Functional_&_Performance_Testing[1][1].docx](https://github.com/user-attachments/files/20962056/GenAI_Functional_._Performance_Testing.1.1.docx)
-[Machine_Learning[1][4].docx](https://github.com/user-attachments/files/20962057/Machine_Learning.1.4.docx)
+## 🔍 Problem Statement
+
+Blood cell analysis is traditionally manual and time-consuming. This project leverages **transfer learning** to automate and accelerate the classification of blood cells, improving efficiency and reducing human error in clinical diagnostics.
+
+---
+
+##  Use Case Scenarios
+
+### Scenario 1: Automated Diagnostic Systems
+Integrates with hospital systems to classify cells in real-time, generate diagnostic reports, and assist pathologists.
+
+### Scenario 2: Remote Medical Consultations
+Enables accurate remote diagnostics in telemedicine platforms through image upload and real-time AI analysis.
+
+### Scenario 3: Medical Education Tools
+Interactive tool for students to learn morphology and classification of cells via image input and feedback.
+
+
+
+## Tech Stack
+
+- Python 3
+- TensorFlow / Keras
+- Flask (for web interface)
+- ResNet50 (pre-trained CNN)
+- Jupyter Notebook
+- HTML/CSS (for frontend)
+  
+#Project Structure
+
+hematovision-app/
+├── app.py # Flask backend
+├── predict.py # Prediction logic
+├── hematovision_model.h5 # Trained model (use Drive link if large)
+├── templates/
+│ └── index.html # Upload UI
+├── uploads/ # Uploaded images folder
+├── requirements.txt # Dependencies
+└── README.md # Project documentation
+
+
